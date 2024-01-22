@@ -17,12 +17,19 @@ const Footer = () => {
     navigation.navigate('Home');
   };
 
+  const goToLogin = () => {
+    // Chuyển đến trang đăng nhập khi người dùng click vào biểu tượng user
+    navigation.navigate('Login');
+  };
+
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={goToHome}>
         <Icon name='home' type='font-awesome' color='#007BFF' style={styles.icon} />
       </TouchableOpacity>
-      <Icon name='user' type='font-awesome' color='#6C757D' style={styles.icon} />
+      <TouchableOpacity onPress={goToLogin}>
+        <Icon name='user' type='font-awesome' color='#6C757D' style={styles.icon} />
+      </TouchableOpacity>
       <TouchableOpacity onPress={goToCart}>
         <Icon name='shopping-cart' type='font-awesome' color='#6C757D' style={styles.icon} />
       </TouchableOpacity>

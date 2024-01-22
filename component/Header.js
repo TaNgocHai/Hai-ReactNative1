@@ -12,16 +12,11 @@ const Header = () => {
                 <TouchableOpacity>
                     <Icon name="menu-outline" size={30} color="#000" />
                 </TouchableOpacity>
-                <Text style={styles.title}>Hải bố đời </Text>
+                <Text style={styles.title}>  Ngọc Hải </Text>
                 <TouchableOpacity>
                 </TouchableOpacity>
             </View>
-            <View style={styles.searchBar}>
-                <TextInput
-                    style={styles.input}
-                    placeholder="Tìm kiếm sản phẩm?"
-                />
-            </View>
+          
         </View>
     );
 };
